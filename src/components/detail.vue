@@ -181,12 +181,7 @@ export default {
           var m = parseInt(this.database.money.replace(/,/g,""));
           const transferEvents = response.data.data.transferEvents.items
           const filteredEvents = transferEvents.filter(valid => {
-            let res = valid.hasOwnProperty('tokenContractAddress') && valid.tokenContractAddress.startsWith('0x')
-            
-            if (this.historyFilter && typeof this.historyFilter === 'object') {
-              const createdAt = this.$moment.utc(valid.timestamp)
-              res = res && createdAt.isAfter(this.historyFilter)
-            }
+            const res = valid.hasOwnProperty('tokenContractAddress') && valid.tokenContractAddress.startsWith('0x')
 
             return res
           })
@@ -214,7 +209,7 @@ export default {
         this.checkLoginAndRouteIfNeeded();
         return;
       }
-      let n = parseInt(this.database.like.replace(/,/g,""));
+      let n = parseInt(this.database.like.replace(/,/g,"")); //,지운다
       this.axios.post(`/api/txAction/${this.txActionName.like}`,{ 
           'from': this.walletAddress.pd,
           'inputs' : {

@@ -78,7 +78,6 @@ export default {
   data() {
     return {
       balance: 0,
-      isLoading: false,
       historyFilter: undefined,
       History: [
       ]
@@ -107,7 +106,8 @@ export default {
       this.axios.get(`/api/getBalance/${this.walletAddress.user}`)
         .then((response) => {
           this.balance = response.data.data.balance;
-          this.balance = (BigNumber(this.balance)).div((BigNumber('10')).pow(18)).toFixed(5);
+          this.balance = (BigNumber(this.balance)).div((BigNumber('10')).pow(18));
+          // 블록체인에서 토큰을 표기하는 최소단위 Decimal에서 10^18 지워줌
         })
         .catch(() => {
           this.balance = 0;
