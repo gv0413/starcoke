@@ -14,15 +14,19 @@
     </div>
     <div class="container px-3">
       <div class="row justify-content-between">
-        <div class="mb-3" style="margin-top: 6rem;">
+        <div class="mb-3" style="margin-top: 3rem;">
           <h3>History</h3>
           
-          <p>
+          <!-- <p class="t_black">
             <a v-if="walletAddress && walletAddress.user" :href="`https://sidescan.luniverse.io/chains/5300575914426995782/accounts/${walletAddress.user}`" target="_blank">Scan에서 확인하기</a>
           </p>
           
-          <button @click="applyHistoryFilter"><span>Apply Filter</span></button>
-          <button @click="removeHistoryFilter"><span>Remove Filter</span></button>
+          <button @click="applyHistoryFilter" class="btn">
+            <i class="far fa-trash-alt"></i>
+          </button>
+          <button @click="removeHistoryFilter" class="btn">
+            <i class="fas fa-redo-alt"></i>
+          </button> -->
         </div>
         <table class="tbl">
             <colgroup>

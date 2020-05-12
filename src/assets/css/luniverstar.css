@@ -217,7 +217,7 @@
 .tbl thead .font-small th { font-size: 13px; }
 .tbl tbody { /*blocks list*/ }
 .tbl tbody tr.on , .tbl tbody tr:hover { cursor: pointer; }
-.tbl tbody tr.on td , .tbl tbody tr:hover td { border-bottom: 1px solid #cde2ff; background-color: #f2f9ff; }
+.tbl tbody tr.on td , .tbl tbody tr:hover td { border-bottom: 1px solid #26a69a; background-color: #fbfdf1; }
 .tbl tbody tr.on td:first-child , .tbl tbody tr:hover td:first-child { color: #1b2733; }
 .tbl tbody tr.on td:first-child .btn_api , .tbl tbody tr:hover td:first-child .btn_api { color: #26a69a; }
 .tbl tbody tr.on td.nodata , .tbl tbody tr:hover td.nodata { background-color: transparent; }
@@ -251,7 +251,7 @@
   border: 1px solid transparent;  padding: .438rem 1.125rem;  font-size: .894rem;  line-height: 1.54;  border-radius: 60rem; transition: all 0.2s ease-in-out;}
 .btn-round {  border-radius: 60rem !important;}
 .btn-outline-white{border-color:#fff;background:transparent;color:#fff}
-.btn-outline-white:hover{border-color:transparent;background:#fff;color:#4E5155}
+.btn-outline-white:hover{border-color:transparent;background:#fff;color:#4E5155;}
 .navbar.navbar-dark {background-color: #26a69a;}
 .navbar-nav .selected {color: white !important; opacity: 1;}
 
