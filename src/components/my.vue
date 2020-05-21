@@ -16,17 +16,6 @@
       <div class="row justify-content-between">
         <div class="mb-3" style="margin-top: 3rem;">
           <h3>History</h3>
-          
-          <!-- <p class="t_black">
-            <a v-if="walletAddress && walletAddress.user" :href="`https://sidescan.luniverse.io/chains/5300575914426995782/accounts/${walletAddress.user}`" target="_blank">Scan에서 확인하기</a>
-          </p>
-          
-          <button @click="applyHistoryFilter" class="btn">
-            <i class="far fa-trash-alt"></i>
-          </button>
-          <button @click="removeHistoryFilter" class="btn">
-            <i class="fas fa-redo-alt"></i>
-          </button> -->
         </div>
         <table class="tbl">
             <colgroup>
@@ -68,15 +57,6 @@ export default {
     Header,
   },
   mounted() {
-    if (localStorage.getItem('historyFilter')) {
-      try {
-        const historyFilterStr = localStorage.getItem('historyFilter')
-        this.historyFilter = this.$moment.utc(new Date(historyFilterStr))
-      } catch(e) {
-        this.$swal('Filter Error', 'Filter를 찾을 수 없습니다.', 'error')
-        localStorage.removeItem('historyFilter')
-      }
-    }
     this.load()
   },
   data() {
@@ -123,11 +103,6 @@ export default {
           const transferEvents = response.data.data.transferEvents.items
           const filteredEvents = transferEvents.filter(valid => {
             let res = valid.hasOwnProperty('tokenContractAddress') && valid.tokenContractAddress.startsWith('0x')
-            
-            if (this.historyFilter && typeof this.historyFilter === 'object') {
-              const createdAt = this.$moment.utc(valid.timestamp)
-              res = res && createdAt.isAfter(this.historyFilter)
-            }
 
             return res
           })
