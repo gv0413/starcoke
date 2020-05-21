@@ -168,12 +168,12 @@
 .portfolio-image::after { content: ""; position: absolute;  top: 0;  right: 0;  bottom: 0;  left: 0;  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, .5)), color-stop(50%, transparent), color-stop(63%, transparent), to(rgba(0, 0, 0, .5)));
   background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 0, transparent 50%, transparent 63%, rgba(0, 0, 0, .5) 100%);}
 
-.detail-01 { background-image: url('../img2/detail/1.jpg');}
+.detail-01 { background-image: url('../img2/idol/blueberry2.png'); background-position: 0 30%;}
 .detail-02 { background-image: url('../img2/detail/2.jpg');}
 .detail-03 { background-image: url('../img2/detail/3.jpg');}
-.detail-04 { background-image: url('../img2/detail/4.jpg');}
-.detail-05 { background-image: url('../img2/detail/5.jpg');}
-.detail-06 { background-image: url('../img2/detail/6.jpg');}
+.detail-04 { background-image: url('../img2/idol/nana5.png'); background-position: 0 60%;}
+.detail-05 { background-image: url('../img2/detail/4.jpg');}
+.detail-06 { background-image: url('../img2/detail/5.jpg');}
 
 .align-items-end{-webkit-box-align:end !important;-ms-flex-align:end !important;align-items:flex-end !important}
 .portfolio-caption {text-shadow: 0 0 5px rgba(0,0,0,.1); font-size: 2.5rem; line-height: 1.1;}

@@ -11,12 +11,12 @@
       <div class="pt-5 px-4 px-md-5">
         <div class="py-md-4 py-xl-5 mx-lg-5">
           <div class="portfolio-caption">
-            <div v-if="idolId == '1'" class="text-tiny t_white font-weight-400">어떤 빵보다 부드러운 목소리,<br>어떤 잼보다 달콤한 목소리.<br>우리가 바로 브레드 앤 잼</div>
+            <div v-if="idolId == '1'" class="text-tiny t_white font-weight-400">The Beat Of Us<br>‘BLUEBERRY'</div>
             <div v-else-if="idolId == '2'" class="text-tiny t_white font-weight-400">I<br>LIKE<br>THE VOICE OF<br>'H.I.M'</div>
             <div v-else-if="idolId == '3'" class="text-tiny t_white font-weight-400">보라색 사과<br>하늘을 헤엄치는 나무늘보<br>우리는 Atypical</div>
             <div v-else-if="idolId == '4'" class="text-tiny t_white font-weight-400">우리의 목소리는<br>어떤 악기든 될 수 있죠<br>노래하듯이, 나나 칸타빌레!</div>
             <div v-else-if="idolId == '5'" class="text-tiny t_white font-weight-400">LIFE IS A JOURNEY,<br>NOT A DESTINATION.</div>
-            <div v-else-if="idolId == '6'" class="text-tiny t_white font-weight-400">Follow the voice<br> 당신의 고막이 녹아버릴지도 모르니까.<br> Morning Glory</div>
+            <div v-else-if="idolId == '6'" class="text-tiny t_white font-weight-400">FOLLOW THE VOICE<br>SING LOUDER<br> MAX</div>
           </div>
         </div>
       </div>
