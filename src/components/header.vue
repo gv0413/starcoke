@@ -17,7 +17,7 @@
                 <i v-if="username !== 'My Page'" class="fa fa-user" />{{username}}
               </router-link>
               <a v-if="$route.name !== 'login' && isLoggedIn" class="btn btn-outline-white btn-round" href="javascript:void(0);" @click="logout">
-                <i class="fas fa-sign-out-alt"></i>
+                <!-- <i class="fas fa-sign-out-alt"></i> --> Logout
               </a>
             </template>
           </div>

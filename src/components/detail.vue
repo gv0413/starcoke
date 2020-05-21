@@ -16,7 +16,7 @@
             <div v-else-if="idolId == '3'" class="text-tiny t_white font-weight-400">보라색 사과<br>하늘을 헤엄치는 나무늘보<br>우리는 Atypical</div>
             <div v-else-if="idolId == '4'" class="text-tiny t_white font-weight-400">우리의 목소리는<br>어떤 악기든 될 수 있죠<br>노래하듯이, 나나 칸타빌레!</div>
             <div v-else-if="idolId == '5'" class="text-tiny t_white font-weight-400">LIFE IS A JOURNEY,<br>NOT A DESTINATION.</div>
-            <div v-else-if="idolId == '6'" class="text-tiny t_white font-weight-400">냉동고를 준비하세요,<br> 당신의 고막이 녹아버릴지도 모르니까.<br> Morning Glory</div>
+            <div v-else-if="idolId == '6'" class="text-tiny t_white font-weight-400">Follow the voice<br> 당신의 고막이 녹아버릴지도 모르니까.<br> Morning Glory</div>
           </div>
         </div>
       </div>
